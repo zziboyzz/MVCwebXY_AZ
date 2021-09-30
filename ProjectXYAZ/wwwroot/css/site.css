@@ -1,0 +1,380 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    background-image: url(../bg1.jpg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+
+body {
+    /* Margin bottom by footer height */
+    /*margin-bottom: 60px;*/
+    width: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+.leftdiv {
+    width: 100%;
+    min-height: 25px;
+}
+.leftDiv{
+    position:absolute;
+    width: 95%;
+    top:5%;
+    height: 95%;
+    border-radius: 3px;
+}
+.rightDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+.minHeight5 {
+    min-height: 5px;
+}
+.minHeight600 {
+    min-height: 600px;
+    width: 100%;
+}
+
+.rightLabelMinHeight {
+    min-height: 25px;
+    max-height: 30px;
+}
+.contentCss{
+    min-height: 575px;
+}
+.TabBar {
+    border-radius: 3px 3px 0 0;
+    background-color: #989898;
+}
+.TabBtnCss1 {
+    font-size: 9px;
+    border: none;
+    background-color: #a65600;
+    margin-right: 1px;
+    margin-left: 2px;
+    border-radius: 3px 3px 0 0;
+    outline: 0 !important;
+    color: white;
+}
+.TabBtnCss2 {
+    font-size: 9px;
+    border: none;
+    margin-right: 1px;
+    background-color: #a65600;
+    border-radius: 3px 3px 0 0;
+    outline: 0 !important;
+    color: white;
+}
+.TabBtnCss3 {
+    font-size: 9px;
+    border: none;
+    background-color: #a65600;
+    margin-right: 1px;
+    border-radius: 3px 3px 0 0;
+    outline: 0 !important;
+    color: white;
+}
+.TabBtnCss4 {
+    font-size: 9px;
+    border: none;
+    background-color: #a65600;
+    margin-right: 1px;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    outline: 0 !important;
+}
+.Title{
+    color: white;
+    font-size: 20px;
+    font-family:Consolas;
+    font-style:normal;
+    font-weight: 800;
+    position: absolute;
+    top: 3%;
+    left: 6.5%;
+}
+.paddingHtml {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    right: 1%;
+    bottom: 0%;
+    width: 98%;
+    height: 90%;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    .paddingHtml {
+        position: absolute;
+        top: 10%;
+        height: 80%;
+        width: 100%;
+        bottom: 5%;
+        left: 0;
+        right: 0;
+
+    }
+    html {
+        position: relative;
+        min-height: 700px;
+        background-image: url(../bg1.jpg);
+        background-repeat: no-repeat, repeat;
+        background-size: cover;
+    }
+}
+.searchInputDiv{
+    max-height: 18px;
+    left: 3.5%;
+}
+.searchInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    outline: 0 !important;
+    border-bottom: none;
+    border-top: 1px solid #373F52;
+    border-left: 1px solid #373F52;
+    border-right: 1px solid #373F52;
+    border-radius: 1px;
+    font-family:Arial;
+}
+.minHeight300 {
+    min-height: 300px;
+}
+.chatBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 293px;
+    border-radius: 2px;
+    background-color: lightgrey;
+}
+
+.chatboxShow {
+    position: absolute;
+    top: 5px;
+    left: 0%;
+    width: 100%;
+    height: 250px;
+    background-color:white;
+    display: block;
+    resize:none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+    .chatboxShow::-webkit-scrollbar {
+        width: 5px;
+    }
+    .chatboxShow::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+.chatBoxInput {
+    position: absolute;
+    top: 260px;
+    left: 0%;
+    width: 100%;
+    height: 28px;
+}
+.chatBoxInput2 {
+    resize: none;
+    display: block;
+    outline: 0 !important;
+    border: none;   
+    max-height: 76px;
+    border-radius: 4px;
+}
+.chatBoxInput2::-webkit-scrollbar{
+    width: 0;
+}
+.loginBox {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+}
+.loginBtn {
+    position:absolute;
+    font-size: 9px;
+    border: none;
+    top: 4px;
+    height: 20px;
+    left: 2%;
+    background-color: #a65600;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    outline: 0 !important;
+    pointer-events: none;
+}
+.registerBtn {
+    font-size: 9px;
+    border: none;
+    background-color: #a65600;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    outline: 0 !important;
+}
+.loginImage{
+    margin-top: 60px;
+}
+.AddIconBtn {
+    position: absolute;
+    height: 28px;
+    width: 45%;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    outline: 0 !important;
+}
+    .AddIconBtn:hover {
+        background-color: aquamarine;
+    }
+span.AddIcon {
+    position: absolute;
+    background: url(../add.png) no-repeat;
+    top: 2px;
+    left: 3.55px;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+.AddDlg {
+    position: absolute;
+    top: 224px;
+    left: 0%;
+    width: 100%;
+    height: 32px;
+    background-color: #dbdbdb;
+    border-radius: 1px 1px 0px 0px;
+    display: none;
+}
+.FilesIconBtn {
+    position: absolute;
+    height: 28px;
+    width: 45%;
+    left: 50%;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    outline: 0 !important;
+}
+    .FilesIconBtn:hover {
+        background-color: aquamarine;
+    }
+span.FilesIcon {
+    position: absolute;
+    background: url(../pin.png) no-repeat;
+    top: 2px;
+    left: 2px;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+.emojiBtn {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    outline: 0 !important;
+    background-color: lightgrey;
+}
+span.EmojiIcon {
+    position: absolute;
+    background: url(../cool.png) no-repeat;
+    top: 1px;
+    left: 2px;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+.massagesDlg {
+    display: inline-block;
+    max-width: 90%;
+    overflow-wrap:break-word;
+    text-align: left;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 5px 5px 5px 0px;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px #888888;
+}

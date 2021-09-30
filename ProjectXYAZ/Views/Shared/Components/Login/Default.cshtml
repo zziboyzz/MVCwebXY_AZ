@@ -1,0 +1,79 @@
+﻿@model ProjectXYAZ.Models.ErrorViewModel;
+<div class="loginBox" style="background-color: lightgrey;">
+    <button class="loginBtn">Đăng nhập</button>
+    <form class="bg-light container" style="
+        position: absolute;
+        padding-top: 10px;
+        width: 96%;
+        top: 25px;
+        height: 240px;
+        left: 2%;
+        border-radius: 0px 3px 3px 3px;
+        "
+          action="/Home/Games" method="post"
+          >
+        <label class="" style="
+        font-size: 12px;
+        margin-left: 5%;
+        ">
+            <b>Tài khoản</b>
+        </label>
+        <input class="col-12" style="
+        max-height: 25px;
+        border: none;
+        border-radius: 3px;
+        background-color: #c8956b;
+        outline: 0 !important;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+        " />
+        <label class="" style="
+        font-size: 12px;
+        margin-left: 5%;
+        "><b>Mật khẩu</b></label>
+        <input type="password" class="col-12" style="
+        max-height: 25px;
+        border: none;
+        border-radius: 3px;
+        background-color: #c8956b;
+        outline: 0 !important;
+        margin-left: 5%;
+        max-width:90%;
+        margin-right: 5%;
+        " />
+        <label class="" style="
+        font-size: 12px;
+        text-align: left;
+        margin-left: 5%;
+        ">
+            <b>Hiện</b>
+        </label>
+        <input type="checkbox" class="" />
+        <div class="" style="
+        font-size: 12px;
+        margin-left: 5%;
+        ">
+            <a><b>Đăng kí</b></a>
+        </div>
+        <div class="" style="
+        font-size: 12px;
+        margin-left: 5%;
+        ">
+            <a><b>Đổi mật khẩu</b></a>
+        </div>
+        <button style="
+        font-size: 12px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 2px;
+        background-color: #a65600;
+        outline: 0 !important;
+        color: white;
+        margin-left: 35%;
+        "
+                type="submit">
+            Đăng nhập
+        </button>
+    </form>
+</div>

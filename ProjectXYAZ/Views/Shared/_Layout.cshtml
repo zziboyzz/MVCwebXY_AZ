@@ -1,0 +1,96 @@
+﻿@model ProjectXYAZ.Models.ChatData
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjectXYAZ</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+<body>
+    <div class="Title">PROJECT XYAZ</div>
+    <div class="row minHeight600 paddingHtml">
+        <div class="col-lg-3 col-md-3 col-sm-3 d-none d-md-block minHeight600">
+            <div class="leftDiv text-center row">
+                <div class="col-12 minHeight300">
+                    <div class="chatBox row">
+                        <div class="col-12 chatboxShow" id="chatBoxShow2">
+                            <div class="" style="position:absolute; width:100%;height:100%; top:0; left:0;" id="chatBoxShow">
+                                @foreach (var message in ViewBag.messages)
+                                {
+                                <div class="col-12" style=" text-align: left; display:block;">
+                                    <div class="massagesDlg"><span style="font-size:11px">User: @ViewBag.CurrentUser</span><br> @message</div>
+                                </div>
+                                }
+
+                            </div>
+                        </div>
+                        <div class="col-12 AddDlg" id="AddDlg">
+                            <button class="FilesIconBtn"><span class="FilesIcon"></span></button>
+                        </div>
+                        <div class="col-12 chatBoxInput row" id="chatBoxTextArea">
+                            <div class="col-3">
+                                <button class="AddIconBtn" id="AddIconBtn"><span class="AddIcon"></span></button>
+
+                                <button class="FilesIconBtn" id="FilesIconBtn"><span class="FilesIcon"></span></button>
+                            </div>
+                            @Html.TextAreaFor(m => m.Messages, new
+                       {
+                           @class = "chatBoxInput2 col-7",
+                           @rows = "1",
+                           @placeholder = "chat...",
+                           @id = "chatInput",
+                           @oninput = "auto_height(this)"
+                       })
+                            <!--<textarea class="chatBoxInput2 col-7" rows="1" placeholder="Chat..." id="chatInput" oninput="auto_height(this)" data-assigned-id="Model.TimestampUtc"></textarea>-->
+                            <div class="col-2">
+                                <button class="emojiBtn"><span class="EmojiIcon"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 minHeight300">
+                    @await Component.InvokeAsync("Login");
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+            <div class="rightLabelMinHeight TabBar row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 minHeight5"></div>
+                <button class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3 TabBtnCss1" type="button"
+                        onclick="location.href='@Url.Action("Thongbao", "Home")'">
+                    Thông báo
+                </button>
+                <button class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3 TabBtnCss2" type="button"
+                        onclick="location.href='@Url.Action("Baigiang", "Home")'">
+                    Bài Giảng
+                </button>
+                <button class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3 TabBtnCss3" type="button"
+                        onclick="location.href='@Url.Action("Tailieu", "Home")'">
+                    Tài Liệu
+                </button>
+                <button class="col-xl-2 col-lg-2 col-md-2 col-sm-2 d-none d-sm-block TabBtnCss4" type="button"
+                        onclick="location.href='@Url.Action("Games", "Home")'">
+                    Trò Chơi
+                </button>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 d-none d-sm-block searchInputDiv">
+                    <input class="searchInput" type="text" id="fname" name="fname" placeholder="Tìm kiếm..." />
+                </div>
+                <!-- hidden when screen size > 576px -->
+                <button class="col-2 d-sm-none TabBtnCss4">...</button>
+
+            </div>
+            <div class="bg-light contentCss">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
